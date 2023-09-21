@@ -1,4 +1,4 @@
-const users = [
+const user = [
     {
         name: "ul1",
         password: "pl1",
@@ -22,5 +22,7 @@ button.addEventListener("click", (e) => {
     location.href = "../Slider/index.html";
 });
 
+
+/404
 
 
