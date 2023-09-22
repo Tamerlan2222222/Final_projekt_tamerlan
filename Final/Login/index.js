@@ -6,7 +6,7 @@ const user = [
     }
 ];
 
-const users = JSON.parse
+const users = localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : users;
 
 if (!localStorage.getItem("users")) {
     localStorage.setItem("users", JSON.stringify(users));
@@ -18,11 +18,6 @@ const button = document.querySelector("button");
 button.addEventListener("click", (e) => {
     e.preventDefault();
     console.log(users);
-
-    location.href = "../Slider/index.html";
+    localStorage.setItem("users", JSON.stringify(users));
+    location.href = "../Slider/main.html";
 });
-
-
-/404
-
-
